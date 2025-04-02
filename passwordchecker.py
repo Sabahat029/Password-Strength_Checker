@@ -29,18 +29,18 @@ def check_password_strength(password):
         feedback.append("Password should be atleast 8 characters long.")
 
     if re.search(r"[A-Z]",password) and re.search(r"[a-z]",password):
-        score =+ 1
+        score += 1
     else:
         feedback.append("Password should contain both upper case(i.e.A-Z) and lower case(i.e.a-z)letters.")
 
     if re.search(r"\d",password):
-        score =+ 1
+        score += 1
     else:
         feedback.append("Password should contain atleast one number(i.e.0-9).")
 
     #special characters
     if re.search(r"[!@#$%^&*]",password):
-        score =+ 1
+        score += 1
     else:
         feedback.append("Password should contain at least one special character(i.e.!@#$%^&*).")
 
