@@ -7,7 +7,7 @@ st.set_page_config(page_title="Password Strength Checker", page_icon="🔒", lay
 #custom css
 st.markdown(""""
 <style>
-    .main{text_align: center;}
+    .main{text-align: center;}
     .stTextInput {width: 60% !important; margin: auto;} 
     .stButton button {width: 50%; background-color: blue; color: white; font-size: 18px;}                 
     .stButton button:hover {background-color: red; color: white;}
